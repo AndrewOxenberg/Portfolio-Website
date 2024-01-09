@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+
+    <title>Dev server</title>
+  </head >
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                <path 
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 
+                    12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 
+                    1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 
+                    0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 
+                    0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 
+                    0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 
+                    12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 
+                    0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="public\Andrew Oxenberg Resume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+          </svg>
+          
+        </button>
+      </nav>
+    </header>
+    <!-- mobile navigation-->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                <path 
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 
+                    12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 
+                    1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 
+                    0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 
+                    0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 
+                    0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 
+                    12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 
+                    0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>
+
+              </svg>
+            </button>
+            
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="public\Andrew Oxenberg Resume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end of mobile navigation-->
+    <main>  
+      <section class="hero container">
+        <img class="hero__img" src="public\thumbnail.jpg" alt="Profile picture">
+        <h2 class="hero__subtitle">Hi, I'm Andrew</h2>
+        <h1 class="hero__title">FRONT-END <br>WEB DEVELOPER.</h1>
+        <p class="hero__description">A passioante <strong>front-end web developer,</strong> crafting digital 
+        experiences by seamlessly <strong>blending design and code </strong>to bring
+           visions to life.</p>
+        <a class="hero__button btn" href="#contact">Reach out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">Hello, I am Andrew, a student at UMD majoring in computer science 
+            learning and practicing <strong>front-end and full stack</strong> web development on the side.
+          </p>
+          <p class="about__description">I love computer science, and want to pursue all 
+            the different angle to find what I love.
+          </p>
+          <p class="about__description">I have lots of ideas, and I can't wait to build new things
+            and showcase my talent.
+          </p>
+          <hr class="about__hr">
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__li">JavaScript (E56+)</li>
+              <li class="about__li">CSS</li>
+              <li class="about__li">ReactJS</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__li">HTML</li>
+              <li class="about__li">NextJS</li>
+              <li class="about__li">TailwindCSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img 
+          class="about__img lazy loading" 
+          src="https://fakeimg.pl/1529x2967"
+          data-src="public/pfp alt.jpg" 
+          alt="pfp" >
+
+        </div>
+      </section>
+      <section  id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured Project</h3>
+        <div class="featured__wrapper"> <h2 class="featured__title">This website</h2>
+          <a class="featured__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+            </svg>
+            
+          </a>
+        </div>
+       
+        <p class="featured__description">As of right now, this is my only project, but there are more to come!</p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech Stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">HTML</li>
+              <li class="featured__info">CSS</li>
+              <li class="featured__info">JavaScript</li>
+              <li class="featured__info">TailwindCSS</li>
+              <li class="featured__info">ReactJS</li>
+              <li class="featured__info">NextJS</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project type</h3>
+            <p class="featured__info">Fullstack-Jamstack</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">December 2023 - present</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x944" data-src="public\prev1.jpg" alt="">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x946" data-src="public\prev2.jpg" alt="">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x774" data-src="public\prev3.jpg" alt="">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x967" data-src="public\prev4.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <section id="work" class="work container section">
+        <h2 class="work__title">Future Projects</h2>
+        <p class="work__description">These are some of my ideas that I hope to implement in the near future.</p>
+        <div class="work__container">
+          <!-- project 1 -->
+          
+            <h3 class="work__project-title">Improved Personal Website</h3>
+            <div class="work__img-wrapper work__image1">
+              <img class="lazy loading" src="https://fakeimg.pl/900" data-src="public\Cropped_Image.PNG" alt="img">
+            </div>
+            <div class="work__project work__content1">
+              <h3 class="work__project-subtitle">Improved Personal Website</h3>
+
+              <p class="work__description1">This current website is very primitive, primarily teaching me the steps of building a website and making it operational. I plan to build a much more astheically pleasing and interactive site
+                that resembles a museum, with each 'painting' highlighting a project I have worked on.
+              </p>
+            </div>
+        
+          <!-- project 2 -->
+          
+            <h3 class="work__project-title">NFL game predictor</h3>
+            <div class="work__img-wrapper work__image2">
+              <img class="lazy loading" src="https://fakeimg.pl/900" data-src="public\NFL moneyline.PNG" alt="img">
+            </div>
+            <div class="work__project work__content2">
+              <h3 class="work__project-subtitle">NFL game predictor</h3>
+
+              <p class="work__description1">This site uses data-driven predictions for NFL games. Leveraging over a decade of historical game data, 
+                my site analyzes patterns and trends to provide insightful forecasts, helping you stay one step ahead in predicting the winners of upcoming matchups.</p>
+            
+            <!-- project 3 -->
+            </div>
+          
+            <h3 class="work__project-title">CollabTune</h3>
+            <div class="work__img-wrapper work__image3">
+              <img class="lazy loading" src="https://fakeimg.pl/900" data-src="public\music app.PNG" alt="img">
+            </div>
+            <div class="work__project work__content3">
+              <h3 class="work__project-subtitle">CollabTune</h3>
+
+              <p class="work__description1">
+                Introducing CollabTune, an innovative app currently in its early development stages, 
+                designed to revolutionize the way booking agents, musicians, and customers collaborate in building ensembles and playlists. </p>
+            </div>
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">Connect with me to explore collaboration opportunities, discuss projects or just say hi.</p>
+        <a class="contact__btn btn" href="mailto:adoxenberg@gmail.com"
+        target="_blank">
+        Reach Out</a>
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Andrew Oxenberg ~</h3>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
